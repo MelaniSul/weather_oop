@@ -1,5 +1,7 @@
 const weather = new Weather('Tartu linn');
 const ui = new UI();
+//default city weather
+document.addEventListener('DOMContentLoaded', drawWeather);
 //change city weather
 const changeBtn = document.querySelector('#w-change');
 changeBtn.addEventListener('click', changeWeather);
@@ -9,7 +11,6 @@ function changeWeather(){
     weather.changeCityName(city);
     drawWeather();
     $('#ChangeCity').modal('hide');
-    console.log(weather);
 }
 
 function drawWeather(){
