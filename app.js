@@ -1,3 +1,3 @@
 const weather = new Weather('Tartu linn');
-cityWeather = weather.weatherData();
+const cityWeather = weather.weatherData();
 console.log(cityWeather);
